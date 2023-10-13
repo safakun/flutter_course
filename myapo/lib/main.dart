@@ -17,7 +17,16 @@ class MyApp extends StatelessWidget {
               title: Text('Material App Bar'),
             ),
             body: Text('Hello world'),
-              bottomNavigationBar: BottomAppBar(),
+              bottomNavigationBar: BottomNavigationBar(
+                items: [
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.home)
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.home)
+                  )
+                ],
+              ),
             ),
           );
   
