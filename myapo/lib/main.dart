@@ -9,29 +9,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Material App',
-          home: Scaffold(
-            appBar: AppBar(
-              title: const Text('Material App Bar'),
-            ),
-            body: const Text('Hello world'),
-              bottomNavigationBar: BottomNavigationBar(
-                 items: const [
-                   BottomNavigationBarItem(
-                     label: 'Home',
-                    icon: Icon(Icons.home)
-                  ),
-                  BottomNavigationBarItem(
-                    label: 'Settings',
-                    icon: Icon(Icons.settings)
-                  )
-                ],
-              ),
-            ),
-          );
-  
-      }
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Material App',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Material App Bar'),
+        ),
+        body: const Center(child: Text('Hello world')),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
+            BottomNavigationBarItem(
+                label: 'Settings', icon: Icon(Icons.settings))
+          ],
+        ),
+      ),
+    );
+  }
 }
-    
