@@ -14,16 +14,18 @@ class MyApp extends StatelessWidget {
           title: 'Material App',
           home: Scaffold(
             appBar: AppBar(
-              title: Text('Material App Bar'),
+              title: const Text('Material App Bar'),
             ),
-            body: Text('Hello world'),
+            body: const Text('Hello world'),
               bottomNavigationBar: BottomNavigationBar(
-                items: [
-                  BottomNavigationBarItem(
+                 items: const [
+                   BottomNavigationBarItem(
+                     label: 'Home',
                     icon: Icon(Icons.home)
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(Icons.home)
+                    label: 'Settings',
+                    icon: Icon(Icons.settings)
                   )
                 ],
               ),
